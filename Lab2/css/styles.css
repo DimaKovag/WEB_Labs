@@ -6,7 +6,7 @@ header{
 
 .menu{
     display: flex;
-    justify-content: center; /* Розташовуємо логотип та меню по центру */
+    justify-content: center;
     align-items: center;
 }
 
@@ -105,7 +105,7 @@ footer {
 }
 
 .footerLink{
-    text-decoration: none;
+text-decoration: none;
 }
 
 

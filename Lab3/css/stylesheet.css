@@ -1,0 +1,95 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    /*transition: 0.5s;*/
+}
+
+#buttonCloseWord{
+    display: none;
+}
+
+/*
+#navbar{
+    transition: 0.5s;
+}
+*/
+
+.button{
+    background-color: WhiteSmoke;
+    border: 0;
+}
+
+.custom-navbar{
+    background-color: lightcoral;
+}
+
+footer{
+    margin-top: auto;
+    /*transition: 0.5s;*/
+}
+
+.wrap-text {
+    white-space: normal;
+}
+
+.jumbotron{
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightcoral;
+    overflow-x: hidden;
+    padding-top: 20px;
+    /*transition: 0.5s;*/
+}
+
+.sidenav.show {
+    display: inline;
+    opacity: 1;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 3vw;
+    color: #111;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-right: 0;
+    padding: 2% 2.7% 2% 2%;
+    /*transition: 0.5s;*/
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
