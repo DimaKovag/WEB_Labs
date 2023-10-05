@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+  <title>FAQ</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="jumbotron text-center">
+    <div class="lds-heart"><div></div></div>
+    <H1>Frequently asked questions</H1>
+  </div>
+</header>
+
+<nav id="navbar" class="navbar custom-navbar navbar-expand-sm">
+  <div><button class="button" id="buttonOpen" onclick="openNav()">Open Sidebar</button></div>
+  <div><button class="button" id="buttonCloseWord" onclick="closeNav()">Close Sidebar</button></div>
+</nav>
+
+<div id="mySidebar" class="sidenav">
+  <a href="index.html">About HHF</a>
+  <a href="authorization.html">Authorization</a>
+  <a href="registration.html">Registration</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="table.html">Charity table</a>
+  <a href="contacts.html">Contact</a>
+</div>
+
+<main id="main">
+<div class="containerFAQ row">
+  <div class="accordion" id="faqAccordion">
+    <!-- 1 -->
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2>
+          <button class="faq-question rounded" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Question 1: Lorem?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+        <div class="card-body">
+          Answer to question 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed nec libero eu lectus iaculis lacinia.
+          Fusce ultricies enim sit amet diam efficitur, in ultrices orci bibendum.
+          Vestibulum quis augue ac est semper eleifend. In euismod euismod justo non scelerisque.
+          Praesent rhoncus, nisi quis hendrerit vestibulum, ex tortor vestibulum risus, a laoreet justo risus id nunc.
+          Proin eleifend risus eu neque placerat, non iaculis nunc semper.
+          Integer id congue enim, nec blandit orci.
+          Nullam at turpis eget augue fermentum sollicitudin a sit amet nulla.
+          Suspendisse potenti. Donec sit amet eros eget urna volutpat sodales.
+          Nulla facilisi.
+          Duis ultricies, tellus quis lacinia tempus, purus urna tristique metus, ac mattis orci libero id urna.
+          Nullam dapibus id lectus vitae faucibus.
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2>
+          <button class="rounded faq-question" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Question 2: Lorem ipsum dolor&
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+        <div class="card-body">
+          Answer to question 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed nec libero eu lectus iaculis lacinia.
+          Fusce ultricies enim sit amet diam efficitur, in ultrices orci bibendum.
+          Vestibulum quis augue ac est semper eleifend. In euismod euismod justo non scelerisque.
+          Nulla facilisi.
+          Duis ultricies, tellus quis lacinia tempus, purus urna tristique metus, ac mattis orci libero id urna.
+          Nullam dapibus id lectus vitae faucibus.
+        </div>
+      </div>
+    </div>
+    <!-- Додайте більше питань і відповідей за аналогічною схемою -->
+  </div>
+</div>
+</main>
+
+<footer class="jumbotron text-center" id="footer">
+  <a href="tel:+123456789" class="text-white mr-3"><i class="fas fa-phone btn-outline-dark"></i></a>
+  <a href="mailto:info@example.com" class="text-white mr-3"><i class="fas fa-envelope btn-outline-dark"></i></a>
+  <a href="https://t.me/your_telegram_link" class="text-white mr-3"><i class="fab fa-telegram btn-outline-dark"></i></a>
+  <a href="https://wa.me/your_whatsapp_number" class="text-white mr-3"><i class="fab fa-whatsapp btn-outline-dark"></i></a>
+</footer>
+
+<!-- Підключаємо Bootstrap JS та jQuery -->
+<script src="scripts/sidebar.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

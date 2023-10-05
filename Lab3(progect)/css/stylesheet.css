@@ -9,11 +9,11 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/*
 header{
-    /*transition: 0.5s;*/
+    transition: 0.5s;
 }
-
+*/
 #buttonCloseWord{
     display: none;
 }
@@ -74,7 +74,7 @@ footer{
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #111;
     display: block;
 }
@@ -87,6 +87,62 @@ footer{
     margin-right: 0;
     padding: 2% 2.7% 2% 2%;
     /*transition: 0.5s;*/
+}
+
+.faq-question{
+    color: lightcoral;
+    border: 2px solid lightcoral;
+    font-size: 19px;
+    background: white;
+}
+
+.faq-question:focus {
+    color: lightcoral;
+    outline: none;
+    text-decoration: none;
+}
+
+.accordion{
+    margin-bottom: 5vw;
+}
+
+.containerContacts{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
+}
+
+.link{
+    color: lightcoral;
+}
+
+.link:hover{
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.containerFAQ{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
+}
+
+.card{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    width: 100%;
+}
+
+th{
+    width: 25%;
+}
+
+td{
+    width: 25%;
+}
+
+.tab{
+    margin-top: 3vw;
 }
 
 @media screen and (max-height: 450px) {

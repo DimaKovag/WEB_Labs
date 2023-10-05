@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity table</title>
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<header id="header">
+  <div class="jumbotron text-center">
+    <div class="lds-heart"><div></div></div>
+    <H1>Hopeful Hearts Foundation</H1>
+  </div>
+</header>
+
+<nav id="navbar" class="navbar custom-navbar navbar-expand-sm">
+  <div><button class="button" id="buttonOpen" onclick="openNav()">Open Sidebar</button></div>
+  <div><button class="button" id="buttonCloseWord" onclick="closeNav()">Close Sidebar</button></div>
+</nav>
+
+
+<div id="mySidebar" class="sidenav">
+  <a href="index.html">About HHF</a>
+  <a href="authorization.html">Authorization</a>
+  <a href="registration.html">Registration</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="table.html">Charity table</a>
+  <a href="contacts.html">Contact</a>
+</div>
+
+<main id="main">
+  <div class="container">
+    <table class="table tab table-bordered table-responsive">
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer class="jumbotron text-center" id="footer">
+  <a href="tel:+123456789" class="text-white mr-3"><i class="fas fa-phone btn-outline-dark"></i></a>
+  <a href="mailto:info@example.com" class="text-white mr-3"><i class="fas fa-envelope btn-outline-dark"></i></a>
+  <a href="https://t.me/your_telegram_link" class="text-white mr-3"><i class="fab fa-telegram btn-outline-dark"></i></a>
+  <a href="https://wa.me/your_whatsapp_number" class="text-white mr-3"><i class="fab fa-whatsapp btn-outline-dark"></i></a>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts/sidebar.js"></script>
+<script src="scripts/table.js"></script>
+</body>
+
+</html>
