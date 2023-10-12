@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     contactForm.addEventListener("submit", function(event) {
         event.preventDefault();
-        // Ваш код обробки форми може бути тут
+
         alert("Ваше повідомлення відправлено!");
-        // Очищаємо поля форми
+
         contactForm.reset();
     });
 });

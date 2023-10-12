@@ -12,9 +12,9 @@ function createTableRow(item) {
         <td>${item.description}</td>
         <td>${item.date}</td>
         <td>
-            <button class="btn btn-primary btn-sm">Переглянути</button>
-            <button class="btn btn-warning btn-sm">Редагувати</button>
-            <button class="btn btn-danger btn-sm">Видалити</button>
+            <button class="btn btn-primary btn-sm">Check</button>
+            <button class="btn btn-warning btn-sm">Change</button>
+            <button class="btn btn-danger btn-sm">Delete</button>
         </td>
     `;
     return row;

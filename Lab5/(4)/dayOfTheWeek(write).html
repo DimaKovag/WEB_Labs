@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dayOfTheWeek.css">
+    <title>День тижня</title>
+</head>
+<body>
+<form>
+<div class="form-group">
+    <label for="day">День</label>
+    <input type="number" class="form-control" id="day" name="day" min="1" max="31" required>
+</div>
+
+<div class="form-group">
+    <label for="month">Місяць</label>
+    <input type="number" class="form-control" id="month" name="month" min="1" max="12" required>
+</div>
+
+<div class="form-group">
+    <label for="year">Рік</label>
+    <input type="number" class="form-control" id="year" name="year" required>
+</div>
+</form>
+<button onclick="date()">Підтвердити дату народження</button>
+<p>День: <span id="daySpan">---</span></p>
+<p>Місяць: <span id="monthSpan">---</span></p>
+<p>Рік: <span id="yearSpan">---</span></p>
+<p><strong>День тижня народження:</strong> <span id="dayOfTheWeekSpan">---</span></p>
+Якщо хочете вибрати дату з календаря переходьте сюди:
+<p><a href="dayOfTheWeek(calendar).html">Сторінка календарного вибору дати</a></p>
+
+<script src="dayOfTheWeek(write).js"></script>
+</body>
+</html>

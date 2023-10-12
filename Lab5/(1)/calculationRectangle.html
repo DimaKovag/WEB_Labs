@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculationRectangle</title>
+    <link rel="stylesheet" href="calculationRectangle.css">
+</head>
+<body>
+<h1> Calculation rectangle (1)</h1>
+Введіть довжину та ширину прямокутника після чого натисніть ентер.<p>
+<label for="length">Довжина:</label>
+<input type="text" id="length" onchange="calculateRectangle()">
+<br>
+<label for="width">Ширина:</label>
+<input type="text" id="width" onchange="calculateRectangle()">
+<br>
+<p>Периметр: <span id="perimeter">---</span></p>
+<p>Площа: <span id="area">---</span></p>
+<p>Довжина діагоналі: <span id="diagonal">---</span></p>
+
+<script src="calculationRectangle.js"></script>
+</body>
+</html>

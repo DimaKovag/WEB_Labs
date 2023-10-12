@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="chat.css">
+  <title>Chat</title>
+</head>
+<body>
+<h1>Chat (2)</h1>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-3">
+      <p>
+      Користувач №1
+      </p>
+      <textarea type="text" id="user1Input" class="form-control mb-2" placeholder="Користувач 1"></textarea>
+      <button class="btn sButton1" onclick="sendMessage('user1')">Відправити</button>
+    </div>
+    <div class="col-md-6">
+      <div id="chatBox" class="chat-box"></div>
+    </div>
+    <div class="col-md-3 text-right">
+      <p>
+      Користувач №2
+      </p>
+      <textarea type="text" id="user2Input" class="form-control mb-2" placeholder="Користувач 2"></textarea>
+      <button class="btn sButton2" onclick="sendMessage('user2')">Відправити</button>
+    </div>
+  </div>
+</div>
+
+<script src="chat.js"></script>
+</body>
+</html>

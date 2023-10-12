@@ -143,6 +143,7 @@ td{
 
 .tab{
     margin-top: 3vw;
+    border: none;
 }
 
 @media screen and (max-height: 450px) {

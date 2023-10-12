@@ -1,0 +1,46 @@
+.chat-box {
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.sButton1{
+    background-color: lightblue;
+}
+
+.sButton2{
+    background-color: lightgreen;
+}
+
+.message {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    display: inline-block; /* Додайте цю властивість */
+    max-width: 100%; /* Запобігаємо виходу за межі контейнера */
+    padding: 5px;
+    border-radius: 5px;
+    white-space: normal;
+}
+
+.user1 {
+    text-align: left;
+    background-color: lightblue;
+    max-width: 80%;
+    clear: left;
+    float: left; /* Для лівого вирівнювання */
+    clear: both;
+}
+
+.user2 {
+    text-align: right;
+    background-color: lightgreen;
+    max-width: 80%;
+    clear: right;
+    float: right; /* Для лівого вирівнювання */
+    clear: both;
+}

@@ -1,0 +1,27 @@
+.container {
+    margin-top: 30px;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+.ukrainian{
+    text-align: center;
+    min-height: 40%;
+}
+
+.transliterated{
+    text-align: center;
+    min-height: 40%;
+}
+
+.form-control{
+    width: 80%;
+    min-height: 200px;
+}
