@@ -13,5 +13,5 @@ function sendMessage(user) {
         chatBox.innerHTML += `<div class="message user2">${message2}</div>`;
         chatBox.innerHTML += '<br>';
     }
-    chatBox.scrollTop = chatBox.scrollHeight; // Автоматичний скрол до останнього повідомлення
+    chatBox.scrollTop = chatBox.scrollHeight;
 }

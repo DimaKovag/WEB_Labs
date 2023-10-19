@@ -18,26 +18,37 @@
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+38(0__) -___-__-__" required>
+                    <span class="error-message" id="phoneError"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" id="password" name="password" required>
+                    <span class="error-message" id="passwordError"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="surname">Surname</label>
                     <input type="text" class="form-control" id="surname" name="surname" required>
+                    <span class="error-message" id="surnameError"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="firstname">First name</label>
                     <input type="text" class="form-control" id="firstname" name="firstname" required>
+                    <span class="error-message" id="firstnameError"></span>
                 </div>
 
                 <div class="form-group">
                     <label for="middlename">Middle name(По батькові)</label>
                     <input type="text" class="form-control" id="middlename" name="middlename" required>
+                    <span class="error-message" id="middlenameError"></span>
                 </div>
 
                 <div class="form-group">
@@ -47,7 +58,7 @@
 
                 <div class="form-group">
                     <label for="group">Group</label>
-                    <select class="form-control" id="group" name="group" required>
+                    <select class="form-control" id="group" name="group">
                         <option value="">Choose your group</option>
                         <option value="group1">Group 1</option>
                         <option value="group2">Group 2</option>
@@ -60,16 +71,45 @@
                     <input type="file" class="form-control-file" id="file" name="file">
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-danger btn-block buttonAuth">Authorize</button>
+                <div class="form-group">
+                    <label>Choose your gender</label>
+                    <br>
+                    <label class="radio-label">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <span class="fas fa-mars"></span>Male
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <span class="fas fa-venus"></span>Female
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" id="no" name="gender" value="no" checked>
+                        <span class="fas fa-genderless"></span>Prefer not to answer
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-danger btn-block buttonAuth">Register</button>
             </form>
+            <table id="registrationTable" class="table table-responsive">
+                <tbody>
+
+                </tbody>
+            </table>
+            <button id="duplicateRows" class="b-table">Duplicate Selected Rows</button>
+            <button id="deleteRows" class="b-table">Delete Selected Rows</button>
         </div>
     </div>
     <div class="back"><a href="index.html">Back to main page</a></div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="scripts/registration.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/RobinHerbots/Inputmask/4.x/dist/jquery.inputmask.bundle.js"></script>
+
 
 </body>
 </html>

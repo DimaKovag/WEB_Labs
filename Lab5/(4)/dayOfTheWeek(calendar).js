@@ -18,5 +18,4 @@ function extractDateInfo() {
     document.getElementById("month").textContent = month;
     document.getElementById("year").textContent = year;
     document.getElementById("dayOfTheWeek").textContent = days[dayOfWeek];
-
 }

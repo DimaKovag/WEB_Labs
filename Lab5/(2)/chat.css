@@ -20,8 +20,8 @@ h1{
 .message {
     margin-bottom: 10px;
     word-wrap: break-word;
-    display: inline-block; /* Додайте цю властивість */
-    max-width: 100%; /* Запобігаємо виходу за межі контейнера */
+    display: inline-block;
+    max-width: 100%;
     padding: 5px;
     border-radius: 5px;
     white-space: normal;
@@ -32,7 +32,7 @@ h1{
     background-color: lightblue;
     max-width: 80%;
     clear: left;
-    float: left; /* Для лівого вирівнювання */
+    float: left;
     clear: both;
 }
 
@@ -41,6 +41,6 @@ h1{
     background-color: lightgreen;
     max-width: 80%;
     clear: right;
-    float: right; /* Для лівого вирівнювання */
+    float: right;
     clear: both;
 }

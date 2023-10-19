@@ -22,3 +22,26 @@
     margin-top: 6vw;
     margin-bottom: 6vw;
 }
+
+.radio-label input[type="radio"] {
+    display: none;
+}
+
+.radio-label input[type="radio"]:checked + span {
+    color: lightcoral; /* або будь-який інший колір */
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* initially hidden */
+}
+
+#registrationTable td {
+    padding: 8px 15px;
+}
+
+.b-table{
+    display: none;
+}
