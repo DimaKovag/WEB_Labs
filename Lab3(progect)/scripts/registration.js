@@ -21,11 +21,28 @@ const surnameError = document.getElementById('surnameError');
 const middlenameInput = document.getElementById('middlename');
 const middlenameError = document.getElementById('middlenameError');
 
-const passwordOK = /^[a-zA-Z0-90-9A-Za-z]{8,}$/;
+const dobInput = document.getElementById('dob');
+const dobError = document.getElementById('dobError');
+
+const passwordOK = /^[a-zA-Z0-90-9A-Za-zа-яґєіїА-ЯҐЄІЇ]{8,}$/;
 const emailOK = /^[a-zA-Z0-9@.]+$/;
 const namesOK = /^[а-яґєіїА-ЯҐЄІЇ]+$/;
 
 let sub = false;
+
+dobInput.addEventListener('input', function() {
+    const selectedDate = new Date(dobInput.value);
+    const currentDate = new Date();
+
+    if (selectedDate > currentDate) {
+        dobError.textContent = 'Invalid date of birth! You can\'t be born in the future.';
+        dobError.style.display = 'block';
+        sub = false;
+    } else {
+        dobError.style.display = 'none';
+        sub = true;
+    }
+});
 
 passwordInput.addEventListener('input', function() {
     if (passwordOK.test(passwordInput.value)){
